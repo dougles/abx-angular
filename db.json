@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Lopez",
+      "email": "calors@gmail.com",
+      "age": 2,
+      "city": "cochabamba"
+    },
+    {
+      "id": "2",
+      "name": "Sombre de Sao content",
+      "age": 0,
+      "city": "Cochabamba",
+      "email": "carlos@gmail.com"
+    },
+    {
+      "id": "3",
+      "name": "Manuel  Lopez",
+      "age": 0,
+      "city": "La paz",
+      "email": "manuel@gmail.com"
+    }
+  ]
+}

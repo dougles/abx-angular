@@ -1,0 +1,39 @@
+<div class="container">
+  <h2>Edit</h2>
+  <form #userForm="ngForm" (ngSubmit)=editUser(user)>
+
+    <div class="form-group">
+      <label for="id">Id</label>
+      <input #id="ngModel" [(ngModel)]="user.id" class="form-control" type="text" name="id" required>
+    </div>
+
+    <div class="form-group" [ngClass]="{ 'has-error': name.invalid && name.dirty }">
+      <label for="name">Name</label>
+      <input #name="ngModel" [(ngModel)]="user.name" class="form-control" type="text" name="name" required>
+      <div *ngIf="name.invalid && name.dirty" class="text-danger">
+        Title is required
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="city">City</label>
+      <input [(ngModel)]="user.city" class="form-control" type="text" name="city">
+    </div>
+
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input [(ngModel)]="user.email" class="form-control" type="text" name="email">
+    </div>
+
+    <button type="submit" class="btn btn-success" [disabled]="userForm.invalid && userForm.dirty">
+      Update
+    </button>
+  </form>
+</div>
+
+<div>
+  <code>
+  Form.valid: {{userForm.valid }}
+</code>
+</div>

@@ -1,0 +1,29 @@
+<h2>Add New User</h2>
+<form>
+  <div>
+    <mat-form-field>
+      <input matInput placeholder="Id" name="id" type="text" [(ngModel)]="user.id">
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field>
+      <input matInput placeholder="Name" name="titulo" type="text" [(ngModel)]="user.name">
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field>
+      <input matInput placeholder="City" name="date" type="text" [(ngModel)]="user.city">
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field>
+      <input matInput placeholder="Email" name="url" type="text" [(ngModel)]="user.email">
+    </mat-form-field>
+  </div>
+  <button mat-raised-button (click)="cancel()">Cancel</button>
+  <button mat-raised-button  (click)="addUser(user)" color="primary">Add</button>
+</form>
+<br>
+<div>
+  <code>{{user | json}}</code>
+</div>

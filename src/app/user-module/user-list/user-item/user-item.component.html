@@ -1,0 +1,8 @@
+<mat-card>
+  <mat-card-title>{{ user.name }}</mat-card-title>
+  <mat-card-subtitle>{{user.email}}</mat-card-subtitle>
+<mat-card-actions>
+<button (click)="editUser(user)"   mat-button>Edit</button>
+<button (click)="deleteUser(user)" mat-button>Delete</button>
+</mat-card-actions>
+</mat-card>
