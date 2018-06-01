@@ -67,9 +67,9 @@ Create components
  
  ## Add material design to project
  
- npm install --save @angular/material @angular/cdk
+ `npm install --save @angular/material @angular/cdk`
  
- npm install --save @angular/animations
+ `npm install --save @angular/animations`
   
  Add line  `@import "~@angular/material/prebuilt-themes/indigo-pink.css";` to file `abx-angular/src/styles.css`
  
